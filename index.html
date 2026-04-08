@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Justin Xiaoni Xu | About</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root { --text: #000; }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Inter", sans-serif; }
+    body { color: var(--text); line-height: 1.7; }
+
+    /* NAVBAR */
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; border-bottom: 1px solid #eee; }
+    nav .brand { font-weight: 700; letter-spacing: 3px; }
+    nav a { text-decoration: none; color: var(--text); text-transform: uppercase; font-size: 0.85rem; margin-left: 2rem; }
+    nav a:hover, nav a.active { text-decoration: underline; }
+
+    /* LAYOUT */
+    .wrapper { max-width: 1100px; margin: 4rem auto; display: flex; gap: 3rem; padding: 0 2rem; }
+    .profile-pic { width: 340px; object-fit: cover; border-radius: 8px; }
+    .content h1 { font-size: 2rem; margin-bottom: 1rem; }
+    .content h2 { font-size: 1.2rem; margin-top: 2rem; margin-bottom: 0.5rem; }
+    .content p { margin-bottom: 1rem; }
+
+    @media (max-width: 768px) { .wrapper { flex-direction: column; } .profile-pic { width: 100%; } nav { flex-direction: column; gap: 0.5rem; } nav a { margin-left: 0; } }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="brand">JUSTIN&nbsp;XIAONI&nbsp;XU</div>
+    <div>
+      <a href="index.html" class="active">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <div class="wrapper">
+    <img src="images/XX_photo.jpg" alt="Justin Xiaoni Xu" class="profile-pic" />
+
+    <div class="content">
+      <h1>About Me</h1>
+      <p>
+        I’m a second‑year master’s student in biostatistics at Columbia
+        University Mailman School of Public Health, where I work with
+        Professors <strong>Linda Valeri</strong> and <strong>Todd Ogden</strong> on causal
+        mediation analysis, functional data analysis, and other methods that
+        bridge statistics and public‑health applications.
+      </p>
+      <p>
+        Before Columbia, I earned a B.A. in Biology (Ecology &amp; Evolution) from the
+        University of Chicago. Under the mentorship of Professors <strong>Graham Slater</strong>
+        and <strong>John Bates</strong> at the Field Museum, I investigated 3‑D
+        morphometric evolution of avian cranial structures and contributed to
+        specimen‑based molecular and morphometric projects at the Field Museum.
+      </p>
+      <p>
+        My broader research interests span causal inference, functional data analysis, 
+	animal morphometrics, statistical theory, and ecological and environmental systems. 
+	Outside the lab, you’ll find me giving out bird
+        walks to other students and exploring New York City via all kinds of public transit.
+      </p>
+
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:xx2485@cumc.columbia.edu">xx2485@cumc.columbia.edu</a></p>
+      <p><a href="CV_Xiaoni_Xu.pdf">Download my CV (PDF)</a></p>
+    </div>
+  </div>
+</body>
+</html>

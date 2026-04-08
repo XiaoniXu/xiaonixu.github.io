@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Justin Xiaoni Xu | Research</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root { --text:#374047; }
+    * { box-sizing:border-box; margin:0; padding:0; font-family:"Inter", sans-serif; }
+    body { color:var(--text); line-height:1.7; }
+
+    /* NAVBAR */
+    nav { display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem; border-bottom:1px solid #eee; }
+    nav .brand { font-weight:700; letter-spacing:3px; }
+    nav a { text-decoration:none; color:var(--text); text-transform:uppercase; font-size:0.85rem; margin-left:2rem; }
+    nav a:hover, nav a.active { text-decoration:underline; }
+
+    /* CONTENT */
+    .container { max-width:900px; margin:4rem auto; padding:0 1rem; }
+    h1 { font-size:2.2rem; margin-bottom:2rem; font-weight:700; }
+    h2 { font-size:1.6rem; margin-top:3rem; margin-bottom:0.8rem; font-weight:700; }
+    p { margin-bottom:1rem; }
+    ul { list-style-type:disc; margin:1rem 0 1rem 1.5rem; }
+
+    /* FLEX layout for project */
+    .proj-flex { display:flex; gap:1.5rem; align-items:flex-start; margin-top:1.2rem; }
+    .proj-img { max-width:280px; flex-shrink:0; border-radius:6px; }
+    .proj-text { flex:1; }
+
+    @media(max-width:768px){ nav{flex-direction:column; gap:.5rem;} nav a{margin-left:0;} .proj-flex{flex-direction:column;} .proj-img{width:100%; max-width:100%;} }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="brand">JUSTIN&nbsp;XIAONI&nbsp;XU</div>
+    <div>
+      <a href="index.html">About</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="publications.html">Publications</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Research</h1>
+
+    <h2>Causal Mediation Analysis with Longitudinal Mediators &amp; Competing Risks</h2>
+    <div class="proj-flex">
+      <img src="images/causal_mediation.png" alt="Causal mediation DAG" class="proj-img" />
+      <div class="proj-text">
+        <p>
+          My practicum project in the Valeri Lab focuses on extending the <a href="https://xiaonixu.github.io/CMAverse/articles/overview.html" target="_blank"><em>CMAverse</em></a>
+          R package. I have developed and implemented a user‑friendly command, <code>cmest_pathcomprisk</code>, which automates causal
+          mediation analysis when (i) mediators are measured repeatedly over time and (ii)
+          both mediators and outcomes are subject to competing events such as death.
+        </p>
+        <p>
+          Diseases of aging—e.g.&nbsp;dementia—often face the competing
+          risk of mortality. Ignoring this alters estimates of indirect effects. Our command
+          provides path‑specific effect estimates that remain causally interpretable under
+          standard identifiability assumptions. I have validated this function through 
+          extensive simulations and applied it to study aging‑related health outcomes.
+        </p>
+
+
+      </div>
+    </div>
+
+    <!-- FDA mitochondrial section -->
+    <h2>Functional Data Analysis of Mitochondrial Morphology</h2>
+    <div class="proj-flex">
+      <img src="images/geodesics.png" alt="Geodesic shapes" class="proj-img" />
+      <div class="proj-text">
+        <p>
+          Under Prof.&nbsp;Todd Ogden, I apply functional data analysis tools (<code>MHD</code>, <code>fdasrvf</code>)
+          to 3‑D mitochondrial shape trajectories in running vs. sedentary mice. We quantify shape
+          variability along geodesic paths and relate morphological features to metabolic phenotypes.
+          The figure illustrates geodesic deformation between hypothetical shapes <em>(adapted from
+          Zhang&nbsp;et&nbsp;al., "Nonparametric k‑sample test on shape spaces with applications to mitochondrial shape analysis", 2022)</em>.
+        </p>
+      </div>
+    </div>
+
+    <h2>Avian Cranial Evolution</h2>
+    <div class="proj-flex">
+      <img src="images/cranium.png" alt="Bird Cranium" class="proj-img" />
+      <div class="proj-text">
+
+    <p>
+      I worked with Rossy Natale, Prof.&nbsp;Graham Slater, and
+      Prof.&nbsp;John Bates to examine the semi‑independent evolution of bird beaks and
+      braincases using high-density 3-D landmarks from shorebirds (order Charadriiformes). 
+      We compared 11 alternative “modularity” models. We found that the beak has followed 
+      its own semi-independent evolutionary path while remaining moderately correlated 
+      with the rest of the skull. This research project has been presented at the 2022
+      American Ornithological Society Annual Conference in Puerto Rico.
+    </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+name: "Justin Xiaoni's site"
+output_dir: "docs"          # finished HTML goes here
+navbar:
+  title: "Home"
+  left:
+    - text: "About"
+      href: about.html
+    - text: "Research"
+      href: research.html
+    - text: "More Info"
+      href: more_info.html
+output:
+  html_document:
+    theme: cerulean
