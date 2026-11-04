@@ -26,6 +26,7 @@
     h2 { font-size:1.6rem; margin-top:3rem; margin-bottom:0.8rem; font-weight:700; }
     p { margin-bottom:1rem; }
     ul { list-style-type:disc; margin:1rem 0 1rem 1.5rem; }
+    li { margin-bottom:0.6rem; }
 
     /* FLEX layout for project */
     .proj-flex { display:flex; gap:1.5rem; align-items:flex-start; margin-top:1.2rem; }
@@ -48,12 +49,36 @@
   <div class="container">
     <h1>Research</h1>
 
+    <h2>Clinical AI at Cedars‑Sinai</h2>
+    <div class="proj-flex">
+      <img src="images/cedars_tumor.jpg" alt="3-D rendering of a breast tumor segmented from stacked MRI slices" class="proj-img" />
+      <div class="proj-text">
+        <p>
+          Since August 2026 I’ve been a Research Assistant at Cedars‑Sinai in Los Angeles,
+          building AI and machine‑learning systems for clinical research.
+        </p>
+        <ul>
+          <li>
+            <strong>CohortIQ:</strong> an LLM‑based clinical phenotyping system that combines an
+            NLP rules layer and RAG retrieval under an AI‑agent orchestrator, with a Streamlit
+            interface. Evaluated on a 6,110‑patient population, it cut token usage by 90%.
+          </li>
+          <li>
+            <strong>Predicting pCR from breast MRI:</strong> an end‑to‑end deep learning pipeline
+            that predicts pathologic complete response to neoadjuvant therapy, using multimodal AI
+            and CT‑pretrained foundation models on multi‑sequence MRI and clinical notes from
+            1,451 pCR‑labeled patients.
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <h2>Causal Mediation Analysis with Longitudinal Mediators &amp; Competing Risks</h2>
     <div class="proj-flex">
       <img src="images/causal_mediation.png" alt="Causal mediation DAG" class="proj-img" />
       <div class="proj-text">
         <p>
-          My practicum project in the Valeri Lab focuses on extending the <a href="https://xiaonixu.github.io/CMAverse/articles/overview.html" target="_blank"><em>CMAverse</em></a>
+          My work in the Valeri Lab (2025–2026) focused on extending the <a href="https://xiaonixu.github.io/CMAverse/articles/overview.html" target="_blank"><em>CMAverse</em></a>
           R package. I have developed and implemented a user‑friendly command, <code>cmest_pathcomprisk</code>, which automates causal
           mediation analysis when (i) mediators are measured repeatedly over time and (ii)
           both mediators and outcomes are subject to competing events such as death.
@@ -62,11 +87,13 @@
           Diseases of aging—e.g.&nbsp;dementia—often face the competing
           risk of mortality. Ignoring this alters estimates of indirect effects. Our command
           provides path‑specific effect estimates that remain causally interpretable under
-          standard identifiability assumptions. I have validated this function through 
-          extensive simulations and applied it to study aging‑related health outcomes.
+          standard identifiability assumptions. I validated this function through
+          extensive simulations, shipped a full testing suite and implementation guide, and
+          applied it to 5,000+ longitudinal patient observations to study aging‑related health outcomes.
         </p>
         <p>
-          <a href="https://xiaonixu.github.io/CMAverse/articles/overview.html" target="_blank">Visit CMAverse Project Website &rarr;</a>
+          <a href="https://xiaonixu.github.io/CMAverse/articles/overview.html" target="_blank">Visit CMAverse Project Website &rarr;</a><br>
+          <a href="https://github.com/XiaoniXu/cmest_pathcomprisk" target="_blank">cmest_pathcomprisk on GitHub &rarr;</a>
         </p>
 
 
@@ -79,11 +106,16 @@
       <img src="images/geodesics.png" alt="Geodesic shapes" class="proj-img" />
       <div class="proj-text">
         <p>
-          Under Prof.&nbsp;Todd Ogden, I apply functional data analysis tools (<code>MHD</code>, <code>fdasrvf</code>)
+          Under Prof.&nbsp;Todd Ogden, I built an automated image‑processing pipeline for 650+
+          biological objects (mitochondrial and egg morphology) and applied functional data analysis tools (<code>MHD</code>, <code>fdasrvf</code>)
           to 3‑D mitochondrial shape trajectories in running vs. sedentary mice. We quantify shape
-          variability along geodesic paths and relate morphological features to metabolic phenotypes.
+          variability along geodesic paths, using distance matrices to relate morphological features
+          to metabolic phenotypes.
           The figure illustrates geodesic deformation between hypothetical shapes <em>(adapted from
           Zhang&nbsp;et&nbsp;al., "Nonparametric k‑sample test on shape spaces with applications to mitochondrial shape analysis", 2022)</em>.
+        </p>
+        <p>
+          <a href="https://github.com/XiaoniXu/shape_analysis_halfspace_depth" target="_blank">View on GitHub &rarr;</a>
         </p>
       </div>
     </div>
@@ -104,6 +136,29 @@
     </p>
       </div>
     </div>
+
+    <h1 style="margin-top:4rem;">Data Science Projects</h1>
+
+    <h2>30‑Day Hospital Readmission Prediction</h2>
+    <p>
+      An end‑to‑end machine learning pipeline on a 50,000‑patient synthetic dataset, with clinically
+      grounded features (LACE score, Charlson Comorbidity Index, high‑utilizer and frailty proxies).
+      A leakage‑safe scikit‑learn pipeline with 5‑fold cross‑validation compares logistic regression and
+      random forest models using ROC‑AUC and precision‑recall on imbalanced data. Flagging the top‑risk
+      discharge cohort translates into an estimated ~$620K net annual savings (62% ROI).
+      <em>Python, scikit‑learn, pandas.</em>
+    </p>
+    <p><a href="https://github.com/XiaoniXu/hospital_readmission_prediction" target="_blank">View on GitHub &rarr;</a></p>
+
+    <h2>Navi Analytics Agent</h2>
+    <p>
+      A reproducible ETL pipeline that turns raw mobile‑app, agent, and subscription logs into a curated
+      SQLite warehouse (dimension, fact, and mart layers) with documented data‑quality checks. On top of it
+      sit a Streamlit dashboard for DAU, retention, agent‑quality, and subscription‑conversion KPIs, and a
+      grounded LLM analytics agent that answers natural‑language metric questions through read‑only tool calls.
+      <em>Python, SQL, SQLite, Streamlit, LLM tool‑calling.</em>
+    </p>
+    <p><a href="https://github.com/XiaoniXu/navi-analytics-agent" target="_blank">View on GitHub &rarr;</a></p>
   </div>
 </body>
 </html>
