@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Justin Xiaoni Xu | Background</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root { --text: #000; }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Inter", sans-serif; }
+    body { color: var(--text); line-height: 1.7; }
+
+    /* NAVBAR */
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; border-bottom: 1px solid #eee; }
+    nav .brand { font-weight: 700; letter-spacing: 3px; }
+    nav a { text-decoration: none; color: var(--text); text-transform: uppercase; font-size: 0.85rem; margin-left: 2rem; }
+    nav a:hover, nav a.active { text-decoration: underline; color: #00a381; }
+
+    /* LINKS */
+    a { color: #00a381; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* CONTENT */
+    .container { max-width: 900px; margin: 4rem auto; padding: 0 1rem; }
+    .container h1 { font-size: 2.2rem; margin-bottom: 1rem; font-weight: 700; }
+    .container h2 { font-size: 1.2rem; margin-top: 2rem; margin-bottom: 0.5rem; }
+    .container p { margin-bottom: 1rem; }
+    .exp { list-style: none; }
+    .exp li { margin-bottom: 1rem; }
+    .date { color: #666; font-size: 0.9rem; white-space: nowrap; }
+    .date::before { content: "· "; }
+
+    @media (max-width: 768px) { nav { flex-direction: column; gap: 0.5rem; } nav a { margin-left: 0; } }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="brand">JUSTIN&nbsp;XIAONI&nbsp;XU</div>
+    <div>
+      <a href="index.html">About</a>
+      <a href="background.html" class="active">Background</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Background</h1>
+
+    <h2>Experience</h2>
+    <ul class="exp">
+      <li><strong>Cedars‑Sinai</strong>, Research Assistant, Los Angeles, CA <span class="date">Aug. 2026 – Present</span><br>
+      Clinical AI: LLM/RAG phenotyping agent (CohortIQ) and multimodal deep learning on breast MRI.</li>
+      <li><strong>Columbia University, Valeri Lab</strong>, Data Science Research Assistant, New York, NY <span class="date">Apr. 2025 – Aug. 2026</span><br>
+      Causal mediation pipelines and a multi‑timepoint mediator function for the CMAverse R package.</li>
+      <li><strong>Columbia University, Ogden Lab</strong>, Research Assistant, New York, NY <span class="date">Oct. 2024 – Aug. 2026</span><br>
+      Automated biomedical image processing and shape analysis of 650+ biological objects.</li>
+      <li><strong>Bristol Myers Squibb</strong>, Data Analyst, Phase 3 Major Depressive Disorder Trial, Chicago, IL <span class="date">Jun. 2023 – Aug. 2023</span><br>
+      Interactive R Shiny dashboard for a 280‑patient trial, adopted by clinical operations.</li>
+      <li><strong>IQVIA</strong>, Data Analyst, Phase 3 Acne Vulgaris Trial, Chicago, IL <span class="date">Aug. 2023 – Oct. 2023</span><br>
+      SAP‑compliant ANCOVA/CMH analysis pipeline for a 1,000‑subject trial.</li>
+    </ul>
+
+    <h2>Education</h2>
+    <p><strong>Columbia University</strong>, M.S. in Biostatistics <span class="date">Sept. 2024 – May 2026</span></p>
+    <p><strong>University of Chicago</strong>, B.A. in Biology <span class="date">Sept. 2019 – Mar. 2023</span><br>
+    Awards: Jeff Metcalf Fellowship Grant; Ecology and Evolution Undergraduate Research Fellowship (2x)</p>
+
+    <h2>Skills</h2>
+    <p><strong>Machine Learning &amp; AI:</strong> Predictive Modeling, Deep Learning (Medical Imaging, Foundation Models), LLMs/RAG, NLP, AI Agents, Feature Engineering, Model Evaluation</p>
+    <p><strong>Statistics:</strong> Causal Inference &amp; Mediation, Survival Analysis, GLM, ANCOVA, PCA, Bayesian/MCMC, Functional Data Analysis, A/B Testing</p>
+    <p><strong>Programming &amp; Tools:</strong> Python (pandas, scikit‑learn), R (tidyverse, ggplot2, survival, MatchIt), SQL, SAS, Git, Streamlit, R Shiny, LaTeX</p>
+    <p><strong>Healthcare &amp; Clinical:</strong> EHR/Claims Data, Patient Risk Stratification, Clinical Trial Analysis, HIPAA‑Aware Workflows</p>
+    <p><strong>Languages:</strong> Mandarin (native), Japanese (fluent), Spanish (advanced), French (beginner)</p>
+
+    <h2>Teaching</h2>
+    <p><strong>Teaching Assistant, Data Science I (Fall 2025)</strong>, Columbia University Mailman School of Public Health.<br>
+    Supported a class of 150+ master's level students in mastering R‑based data science workflows, including data cleaning, visualization, and reproducible research practices. Additionally, provided direct mentorship and technical support for 7 individual student projects.</p>
+  </div>
+</body>
+</html>

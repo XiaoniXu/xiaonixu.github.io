@@ -8,7 +8,8 @@ The website serves as a central hub for my professional identity, showcasing my 
 *   **Project Showcase:** Features direct integrations and tracking of my active software development (e.g., the `cmcrhazard` R package and my extensions to the `CMAverse` pipeline).
 *   **Live Credentials:** Maintains an up-to-date outline of my technical toolkit (R, Python, Survival Analysis), educational credentials, and direct contact channels for collaborating researchers and recruiters.
 ## Repository Structure
-*   `index.html`: About, experience, education, skills, teaching, and contact.
+*   `index.html`: About, selected experience, and contact.
+*   `background.html`: Experience, education, skills, and teaching.
 *   `research.html`: Research (Cedars-Sinai, Valeri Lab, Ogden Lab, Field Museum) and data science projects.
 *   `publications.html`: Publications and conference presentations.
 *   `images/`: Photos and figures.
